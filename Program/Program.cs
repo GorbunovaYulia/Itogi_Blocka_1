@@ -4,7 +4,7 @@
     for (int i = 0; i < length; i++)
     {
         Console.WriteLine("Введите строку");
-        arr[i] = Console.ReadLine();
+        arr[i] = Console.ReadLine()!;
     }
     return arr;
 }
@@ -37,7 +37,7 @@ void PrintArray(string[] array)
     Console.Write("]");
 }
 
-string[] array = GetArray(4);
+string[] array = GetArray(3);
 string[] newarr = GetNewArray(array);
 PrintArray(array);
 Console.Write("  ->  ");
